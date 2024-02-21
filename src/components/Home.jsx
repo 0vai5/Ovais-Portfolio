@@ -2,7 +2,6 @@ import React from 'react';
 import Button from './button';
 import CTA from './CTA';
 import { Link } from 'react-router-dom';
-import Footer from './footer';
 
 const Home = () => {
   return (
@@ -34,6 +33,7 @@ const Home = () => {
         <img src="/hero.png" alt="" />
       </div>
       </div>
+      
 
       <CTA />
 

@@ -14,10 +14,10 @@ const Navbar = () => {
       </NavLink>
 
       <nav className="flex text-lg gap-7 font-medium">
-        <NavLink to={'/contact'} className={({ isActive })=> isActive ? 'text-slate-200' : 'text-black'}>
+        <NavLink to={'/contact'} className={({ isActive })=> isActive ? 'text-[#00B3FF]' : 'text-[#FFFFff]'}>
            Contact
         </NavLink>
-        <NavLink to={'/about'} className={({ isActive })=> isActive ? 'text-slate-200' : 'text-black'}>
+        <NavLink to={'/about'} className={({ isActive })=> isActive ? 'text-[#00B3FF]' : 'text-[#FFFFff]'}>
               About
         </NavLink>
       </nav>

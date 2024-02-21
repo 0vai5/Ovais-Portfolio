@@ -23,7 +23,7 @@ body:has(.card[data-color="green"]:hover) {
 
 @layer utilities {
   .max-container {
-    @apply max-w-5xl mx-auto sm:p-16 pb-6 !pt-[140px] px-4 max-h-[calc(100vh-80px)];
+    @apply max-w-5xl mx-auto sm:p-16 pb-6 !pt-[128px] px-4 max-h-[calc(100vh-80px)];
   }
 
   .head-text {
@@ -71,7 +71,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .cta {
-    @apply w-full flex items-center md:flex-row flex-col sm:mt-16 mt-8 ;
+    @apply w-full flex items-center md:flex-row flex-col sm:mt-16  mt-2 ;
   }
 
   .cta-text {
