@@ -212,7 +212,7 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .spinner::before {
-  border-color: #474bff #0000;
+  border-color: #009687 #0000;
   animation: inherit;
   animation-duration: 0.5s;
   animation-direction: reverse;

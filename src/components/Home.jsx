@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Button from './button';
 import CTA from './CTA';
 import { Link } from 'react-router-dom';
-import Spinner from './spinner'
 
 const Home = () => {
   const [loading, setLoading] = useState(false)
@@ -14,12 +13,7 @@ const Home = () => {
   }, [])
   return (
     <section className='max-container '>
-      {loading ? (
-        <div className='flex justify-center items-center mt-20'>
-          <Spinner />
-        </div>
-
-      ) : (
+      
         <>
           <div className='flex flex-col sm:flex-row items-center m-0 justify-between '>
             <div className='flex flex-col'>
@@ -52,7 +46,7 @@ const Home = () => {
 
           <CTA />
         </>
-      )}
+      
 
 
     </section>
