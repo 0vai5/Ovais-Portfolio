@@ -9,7 +9,7 @@ import ErrorPage from "./pages/ErrorPage";
 
 const App = () => {
   return (
-    <main className="">
+    <main>
       <Router>
         <Navbar />
         <Routes>
