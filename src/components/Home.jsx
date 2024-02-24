@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { lazy, useEffect, useState } from 'react';
 import Button from './button';
 import CTA from './CTA';
 import { Link } from 'react-router-dom';
@@ -39,7 +39,7 @@ const Home = () => {
             </div>
 
             <div>
-              <img src="/hero.png" alt="" />
+              <img loading='lazy' src="/hero.png" alt="HeroImg" />
             </div>
           </div>
 
