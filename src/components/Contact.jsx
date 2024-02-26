@@ -1,20 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
+import Alert from './Alert';
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false)
+  const [showErrorAlert, setShowErrorAlert] = useState(false)
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
+    reset
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    console.log(data)
+    setIsSubmitting(true)
+    await emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: data.fullname,
+          to_name: "Ovais",
+          from_email: data.email,
+          to_email: "rovais53@gmail.com",
+          message: data.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      ).then((response) => {
+        setIsSubmitting(false)
+        reset()
+        setShowSuccessAlert(true)
+        console.log("Response Recieved: " + response)
+
+
+
+      }).catch((error) => {
+        console.log('Error in sending email: ' + error);
+        setShowErrorAlert(true)
+      })
   };
 
   return (
     <>
+      {showSuccessAlert && <Alert type={'success'} emoji={'😃'} message={'Thank you for your message'} />}
+      {showErrorAlert && <Alert type={'error'} emoji={'😢'} message={"I didn't recieve Anything "} />}
       <section className='max-container'>
         <div className="flex-1 min-w-[50%] flex flex-col ">
           <h1 className="head-text text-[#fff]">Get in Touch</h1>
@@ -45,7 +77,7 @@ const Contact = () => {
                   type="email"
                   className="input"
                   placeholder="example@gmail.com"
-                  formNoValidate = 'true'
+                  formNoValidate='true'
                   {...register('email', {
                     required: 'Email is required',
                     pattern: {
@@ -68,7 +100,7 @@ const Contact = () => {
                   {...register('message', {
                     required: 'Message is required',
                     maxLength: { value: 300, message: 'Message is too long' },
-                    minLength: { value: 20, message: 'Message is too short' },
+                    minLength: { value: 5, message: 'Message is too short' },
                   })}
                 />
                 {errors.message && (
@@ -76,8 +108,8 @@ const Contact = () => {
                 )}
               </label>
 
-              <button type="submit" className="btn">
-                Send Something
+              <button type="submit" className="btn" disabled={isSubmitting}>
+                {isSubmitting ? 'Sending...' : 'Send Something'}
               </button>
             </form>
           </div>

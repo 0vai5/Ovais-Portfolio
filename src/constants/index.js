@@ -1,4 +1,3 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
     car,
     contact,
@@ -128,29 +127,18 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "FullStack Engineer",
-        company_name: "HouseHold Accessories",
-        // icon: household,
+        title: "Web Development Intern",
+        company_name: "Internee.pk",
+        icon: 'https://internee.pk/1st-logo.jpg',
         iconBg: "#accbe1",
-        date: "Aug 2023 - Present",
+        date: "Feb 2024 - Present",
         points: [
             "As a Full-stack Developer specializing in household accessories, you play a vital role in creating a seamless digital experience for users.",
             "This involves designing an intuitive and attractive user interface, implementing interactive features, optimizing performance, managing databases, and ensuring overall platform security and scalability.",
             "Collaboration with various stakeholders and staying updated with industry trends is key to delivering innovative solutions in this dynamic market.",
         ],
     },
-    {
-        title: "Front End Engineer",
-        company_name: "Household Accessories",
-        // icon: household,
-        iconBg: "#fbc3bc",
-        date: "Jun 2022 - Aug 2023",
-        points: [
-            "As a Frontend Developer specializing in household accessories, your focus is on creating an engaging and intuitive user interface for both the application and website.",
-            "You work on designing and implementing interactive features, optimizing performance, and ensuring a seamless user experience across devices.",
-            "Collaboration with designers and a keen eye on emerging trends are crucial to deliver a visually appealing and customer-centric digital platform.",
-        ],
-    }
+    
 ];
 
 export const socialLinks = [
