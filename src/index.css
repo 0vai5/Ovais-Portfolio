@@ -31,7 +31,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .subhead-text {
-    @apply font-semibold sm:text-3xl text-xl relative ;
+    @apply font-semibold sm:text-3xl text-2xl relative ;
   }
 
   .blue-gradient_text {
@@ -71,7 +71,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .cta {
-    @apply w-full flex items-center md:flex-row flex-col sm:mt-16  mt-2 ;
+    @apply w-full flex items-center md:flex-row flex-col sm:mt-16  ;
   }
 
   .cta-text {
@@ -148,7 +148,6 @@ body:has(.card[data-color="green"]:hover) {
   z-index: 1;
   width: inherit;
   height: inherit;
-  background-color: #ffffff33;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   transition: 250ms;
@@ -158,11 +157,11 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .block-container:hover > .btn-back {
-  transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
+  transform: translateZ(20px) ;
 }
 
 .block-container:hover > .btn-front {
-  transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
+  transform: translateZ(80px) ;
 }
 
 /* Neo Brutalism */
@@ -226,4 +225,79 @@ body:has(.card[data-color="green"]:hover) {
   100% {
     transform: rotate(1turn);
   }
+}
+
+.social-card {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: transparent;
+  padding: 20px 25px;
+  border-radius: 14px;
+}
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.BG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  z-index: 1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+  font-size: 0px;
+}
+.github .BG {
+  background: #181818;
+}
+.linkdin .BG {
+  background: #0077b5;
+}
+.whatsapp .BG {
+  background: #075e54;
+}
+.discord .BG {
+  background: #7289da;
+}
+.Btn:hover .BG {
+  transform: scale(1.5);
+  /* transform-origin: bottom; */
+  font-size: 20px;
+  color: white;
+}
+
+.Btn:hover .svgContainer {
+  border: 1px solid rgba(216, 216, 216, 0.466);
+  background-color: rgba(209, 209, 209, 0.466);
+  backdrop-filter: blur(4px);
 }
