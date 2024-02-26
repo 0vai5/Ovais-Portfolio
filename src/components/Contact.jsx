@@ -45,10 +45,11 @@ const Contact = () => {
 
   return (
     <>
-      {showSuccessAlert && <Alert type={'success'} emoji={'😃'} message={'Thank you for your message'} />}
-      {showErrorAlert && <Alert type={'error'} emoji={'😢'} message={"I didn't recieve Anything "} />}
+
       <section className='max-container'>
         <div className="flex-1 min-w-[50%] flex flex-col ">
+          {showSuccessAlert && <Alert type={'success'} emoji={'😃'} message={'Thank you for your message'} />}
+          {showErrorAlert && <Alert type={'error'} emoji={'😢'} message={"I didn't recieve Anything "} />}
           <h1 className="head-text text-[#fff]">Get in Touch</h1>
 
           <div className="px-15">
