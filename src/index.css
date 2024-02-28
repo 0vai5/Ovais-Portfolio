@@ -71,7 +71,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .cta {
-    @apply w-full flex items-center md:flex-row flex-col sm:mt-16  ;
+    @apply w-full flex items-center md:flex-row flex-col mt-0 sm:mt-16  ;
   }
 
   .cta-text {
@@ -111,7 +111,6 @@ body:has(.card[data-color="green"]:hover) {
   transform-origin: bottom right;
   transform: rotateZ(15deg);
   will-change: transform;
-  box-shadow: 16px 0 40px #e4e4e4;
 }
 
 .block-container .btn-back-red {

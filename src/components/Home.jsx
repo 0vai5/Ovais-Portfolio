@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <motion.section
       className='max-container'
-      initial={{ opacity: 0}}
+      initial={{ opacity: 0 }}
       animate={containerControls}
     >
       <motion.div className='flex flex-col sm:flex-row items-center m-0 justify-between'>

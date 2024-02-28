@@ -32,6 +32,7 @@ const Contact = () => {
         setIsSubmitting(false)
         reset()
         setShowSuccessAlert(true)
+        setTimeout(() => setShowSuccessAlert(false), 3000)
         console.log("Response Recieved: " + response)
 
 
@@ -39,6 +40,9 @@ const Contact = () => {
       }).catch((error) => {
         console.log('Error in sending email: ' + error);
         setShowErrorAlert(true)
+        setTimeout(() => {
+          setShowErrorAlert(false)
+        }, 3000);
       })
   };
 
@@ -47,7 +51,7 @@ const Contact = () => {
 
       <section className='max-container'>
         <div className="flex-1 min-w-[50%] flex flex-col ">
-          
+
           <h1 className="head-text text-[#fff]">Get in Touch</h1>
           {showSuccessAlert && <Alert type={'success'} emoji={'😃'} message={'Thank you for your message'} />}
           {showErrorAlert && <Alert type={'error'} emoji={'😢'} message={"I didn't recieve Anything "} />}
