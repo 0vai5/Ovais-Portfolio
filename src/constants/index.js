@@ -122,6 +122,11 @@ export const skills = [
         imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg',
         name: 'Visual Studio Code',
         type: 'IDE'
+    },
+    {
+        imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
+        name: 'TypeScript',
+        type: 'Language'
     }
 ];
 
