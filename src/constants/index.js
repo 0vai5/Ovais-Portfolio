@@ -61,7 +61,7 @@ export const skills = [
         name: "MongoDB",
         type: "Database",
     },
-    
+
     {
         imageUrl: mui,
         name: "Material-UI",
@@ -82,8 +82,6 @@ export const skills = [
         name: "React",
         type: "Frontend",
     },
-   
-   
     {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
@@ -124,9 +122,39 @@ export const skills = [
         type: 'IDE'
     },
     {
-        imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
-        name: 'TypeScript',
-        type: 'Language'
+        imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongoose/mongoose-original.svg',
+        name: 'Mongoose',
+        type: 'Models'
+    },
+    {
+        imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/axios/axios-plain.svg',
+        name: 'Axios',
+        type: 'Requests'
+    },
+    {
+        imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/netlify/netlify-original.svg',
+        name: 'Netlify',
+        type: 'Deployment'
+    },
+    {
+        imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/vercel/vercel-original.svg',
+        name: 'Vercel',
+        type: 'Deployment'
+    },
+    {
+        imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/vitejs/vitejs-original.svg',
+        name: 'ViteJS',
+        type: 'Development'
+    },
+    {
+        imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/reactrouter/reactrouter-original-wordmark.svg',
+        name: 'React-Router-Dom',
+        type: 'Navigation'
+    },
+    {
+        imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/reactbootstrap/reactbootstrap-original.svg',
+        name: 'React-Bootstrap',
+        type: 'Styling'
     }
 ];
 
@@ -136,14 +164,26 @@ export const experiences = [
         company_name: "Internee.pk",
         icon: 'https://internee.pk/1st-logo.jpg',
         iconBg: "#accbe1",
-        date: "Feb 2024 - Present",
+        date: "Feb 2024 - Mar 2024",
         points: [
             "As a Full-stack Developer specializing in household accessories, you play a vital role in creating a seamless digital experience for users.",
             "This involves designing an intuitive and attractive user interface, implementing interactive features, optimizing performance, managing databases, and ensuring overall platform security and scalability.",
             "Collaboration with various stakeholders and staying updated with industry trends is key to delivering innovative solutions in this dynamic market.",
         ],
     },
-    
+    {
+        title: "Full Stack Developer",
+        company_name: 'SaffaEnterprises',
+        icon: 'https://saffaenterprises.vercel.app/saffaenterprises.png',
+        iconBg: "#accbe1",
+        date: 'Mar 2024 - Present',
+        points: [
+            "As a Full-stack Developer specializing in household accessories, you play a vital role in creating a seamless digital experience for users.",
+            "This involves designing an intuitive and attractive user interface, implementing interactive features, optimizing performance, managing databases, and ensuring overall platform security and scalability.",
+            "Collaboration with various stakeholders and staying updated with industry trends is key to delivering innovative solutions in this dynamic market.",
+        ]
+    }
+
 ];
 
 export const socialLinks = [
@@ -163,9 +203,9 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'ExchangeX - Currency Converter',
-        description: 'Developed a web application with API integration for latest Curency Exchange Rates.',
-        link: 'https://github.com/0vai5/ExchangeX',
+        name: 'SaffaEnterprises - Invoice Management Software',
+        description: 'Developed a web application to store company Invoices in DataBase',
+        link: 'https://github.com/0vai5/saffaenterprises-dashboard',
     },
     {
         iconUrl: threads,
@@ -184,9 +224,9 @@ export const projects = [
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'PDFX - Your favourite pdf merger tool',
-        description: 'PDFX-merger is a simple Node.js application that allows users to merge multiple PDF files into a single PDF file. The application uses the pdf-merger-js library to merge the PDF files.',
-        link: 'https://github.com/0vai5/PDFX-PDF-MERGER',
+        name: 'SaffaEnterprises Portfolio Website',
+        description: 'SaffaEnterprises Portfolio Application showing the Products and the Works of the Company',
+        link: 'https://github.com/0vai5/saffaenterprises-portfolio-app',
     },
     {
         iconUrl: summiz,
