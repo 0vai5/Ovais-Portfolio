@@ -155,6 +155,26 @@ export const skills = [
         imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/reactbootstrap/reactbootstrap-original.svg',
         name: 'React-Bootstrap',
         type: 'Styling'
+    },
+    {
+        imageUrl: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/appwrite/appwrite-original.svg",
+        name: "Appwrite",
+        type: "BaaS"
+    },
+    {
+        imageUrl: "https://img.icons8.com/?size=100&id=rHpveptSuwDz&format=png&color=000000",
+        name: "JWT",
+        type: "Token"
+    },
+    {
+        imageUrl: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/postman/postman-original.svg",
+        name: "PostMan",
+        type: "Api Testing"
+    },
+    {
+        imageUrl: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/redux/redux-original.svg",
+        name: "Redux",
+        type: "State Management"
     }
 ];
 
@@ -162,7 +182,7 @@ export const experiences = [
     {
         title: "Web Development Intern",
         company_name: "Internee.pk",
-        icon: 'https://internee.pk/1st-logo.jpg',
+        icon: './internee.png',
         iconBg: "#accbe1",
         date: "Feb 2024 - Mar 2024",
         points: [
