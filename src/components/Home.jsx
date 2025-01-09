@@ -36,7 +36,7 @@ const Home = () => {
             Hello, I'm
             <span className="blue-gradient_text font-semibold drop-shadow">
               {" "}
-              Ovais
+              Ovais Raza
             </span>
             <span role="img" aria-label="Waving Hand" style={{ marginLeft: '8px' }}>👋</span>
           </h1>
