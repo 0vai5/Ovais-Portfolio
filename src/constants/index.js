@@ -229,10 +229,10 @@ export const projects = [
     },
     {
         iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'NextJS Todo App',
-        description: 'Build an Efficient Todo List App using Next.js: Organize Your Tasks Seamlessly!',
-        link: 'https://github.com/0vai5/Todo-list-via-ReactJS-NextJS',
+        theme: 'btn-back-orange',
+        name: 'BITDrive - A Cloud Storage Application',
+        description: 'Developed a web application to store files in the cloud',
+        link: 'https://github.com/0vai5/BITDrive',
     },
     {
         iconUrl: snapgram,
@@ -251,8 +251,8 @@ export const projects = [
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
-        name: 'Hunting Coder Blog - A blog by a Coder',
-        description: 'A Blog by a Passionate Coder" is a dynamic online platform where a skilled and dedicated coder shares their insights, experiences, and expertise in the world of programming and software development.',
-        link: 'https://github.com/0vai5/HuntingCoder-Blog-by-a-Coder',
+        name: 'Blogify - A Blogging Platform',
+        description: 'Developed a web application to write and share blogs',
+        link: 'https://github.com/0vai5/Blogify',
     }
 ];
