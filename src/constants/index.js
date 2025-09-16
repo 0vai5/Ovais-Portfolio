@@ -356,7 +356,14 @@ export const projects = [
     iconUrl: "https://w7.pngwing.com/pngs/150/625/png-transparent-artificial-intelligence-ai-chip-computer-technology-artificial-intelligence-icon.png",
     theme: "btn-back-yellow",
     name: "KamkaAI - AI-Powered Documentation",
-    description: "Kamka AI writes your README for you, intelligently analyzing your code, dependencies, and intent to produce developer-friendly documentation that speaks clearly.",
+    description: "Kamka AI writes your README for you, intelligently analysing your code, dependencies, and intent to produce developer-friendly documentation that speaks clearly.",
     link: "https://kamka-ai.vercel.app",
+  },
+  {
+    iconUrl: "https://www.clavero.app/OmniView%20AI%20Wordmark.png",
+    theme: "btn-back-black",
+    name: "Clavero - Doc to AI-Powered Insights",
+    description: "Transform your documents into AI-powered insights in seconds with Clavero. Fast, secure, and intuitive document analysis.",
+    link: "https://clavero.app",
   },
 ];
